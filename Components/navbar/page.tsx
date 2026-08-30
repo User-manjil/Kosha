@@ -1,3 +1,6 @@
+import Link from "next/link"
+
+// const {}
 export default function Navbar() {
     return (
         <div className="flex justify-between items-center p-2 ">
@@ -5,8 +8,9 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
             <ul className="flex space-x-4 text-xs">
 
-                <li><a href="/">STORE</a></li>
-                <li><a href="/store/cart">CART</a></li>
+              <Link href="/">Store</Link>
+              <Link href="/store/discover">Products</Link>
+              <Link href="/cart">Cart</Link>
 
             </ul>
 
