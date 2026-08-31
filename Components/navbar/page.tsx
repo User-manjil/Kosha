@@ -11,14 +11,15 @@ export default function Navbar() {
               <Link href="/">Store</Link>
               <Link href="/store/discover">Products</Link>
               <Link href="/store/cart">Cart</Link>
-
+s
             </ul>
 
             <div className="flex">
-                <button  className="font-regular bg-black  text-white py-1 px-4 text-xs cursor-pointer"><a href="/login">Sign in</a></button>
+               
+                <button  className="font-regular bg-black  text-white py-1 px-4 text-xs cursor-pointer"><a href="/login">LogIn</a></button>
             </div>
+
         </div>
-        
         </div>
     )
 }
