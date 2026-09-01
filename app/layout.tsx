@@ -3,6 +3,7 @@ import { Asap_Condensed, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/navbar/page";
 import Footer from "@/Components/Footer/page";
+import { AppProvider } from "@/context/AppContext";
 
 
 const asapSharp = Asap_Condensed({
@@ -30,9 +31,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={` h-full antialiased`}
     >
       <body className={`min-h-full flex flex-col px-3 ${greatVibes.variable} ${asapSharp.variable}`}>
-        <Navbar/>
+        <AppProvider>
+         <Navbar/>
         {children}
         <Footer/>
+
+        </AppProvider>
+       
         
 
         </body>

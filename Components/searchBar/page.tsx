@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
+import {useAppContext} from "@/context/AppContext"
 export default function SearchBar() {
-    const [search , setSearch] = useState("")
-
+    // const [search , setSearch] = useState("")
+    const {search , setSearch} = useAppContext();
     
 
     return (
